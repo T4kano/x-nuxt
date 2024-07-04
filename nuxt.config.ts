@@ -7,5 +7,12 @@ export default defineNuxtConfig({
   },
   ui: {
     icons: ['solar']
+  },
+  app: {
+    head: {
+      bodyAttrs: {
+        class: 'bg-gray-900 text-white antialiased'
+      }
+    }
   }
 })

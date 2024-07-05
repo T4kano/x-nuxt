@@ -1,14 +1,10 @@
-import { useAuthStore } from '~/stores/useAuthStore.js'
+import actions from '~/actions'
 
 export default defineNuxtPlugin(async (nuxtApp) => {
-  const authStore = useAuthStore()
-
-  if (!authStore.isLoggedIn) {
-    try {
-      await authStore.fetchUser()
-      navigateTo('/')
-    } catch (error) {
-      navigateTo('/login')
-    }
+  try {
+    await actions.auth.fetchUser()
+    navigateTo('/')
+  } catch (error) {
+    navigateTo('/login')
   }
 })

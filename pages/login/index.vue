@@ -1,15 +1,17 @@
 <script lang="ts" setup>
-import { useAuthStore } from '~/stores/useAuthStore'
+import type { LoginForm } from '~/actions/auth/login';
+import actions from '~/actions';
+// import { useAuthStore } from '~/stores/useAuthStore'
 definePageMeta({ layout: 'guest', middleware: ['guest'] })
 
-const authStore = useAuthStore()
+// const authStore = useAuthStore()
 
 async function handleLogin() {
-  await authStore.login(form)
+  await actions.auth.login(form)
   navigateTo('/')
 }
 
-const form = reactive({
+const form = reactive<LoginForm>({
   email: 'test@example.com',
   password: 'password'
 })

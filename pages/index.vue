@@ -3,9 +3,6 @@ import actions from '~/actions'
 
 definePageMeta({ middleware: ['auth'] })
 
-const store = useTweetStore()
-const tweets = computed(() => store.tweets)
-
 async function logout() {
   await actions.auth.logout()
   navigateTo('/login')
@@ -13,9 +10,10 @@ async function logout() {
 </script>
 
 <template>
-  <div class="container bg-red-900/20 m-auto">
-    {{ tweets }}
+  <div class="container bg-red-900/20 m-auto space-y-6">
     <TweetCreate />
+
+    <Timeline />
 
     <UButton
       icon="i-solar-login-2-bold-duotone"

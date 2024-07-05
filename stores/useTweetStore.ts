@@ -1,11 +1,11 @@
-import type { Tweet } from "~/actions/tweet"
+import type { Tweet } from '~/actions/tweet'
 
 export const useTweetStore = defineStore('tweet', () => {
   const tweets = ref<Tweet[]>([])
 
-  const addTweet = (newTweet: Tweet) => {
-    tweets.value.push(newTweet)
-  }
+  const addTweet = (tweet: Tweet) => tweets.value.unshift(tweet)
 
-  return { tweets, addTweet }
+  const loadTweets = (newTweets: Tweet[]) => (tweets.value = newTweets)
+
+  return { tweets, addTweet, loadTweets }
 })

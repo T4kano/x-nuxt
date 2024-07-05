@@ -10,7 +10,7 @@ async function logout() {
 </script>
 
 <template>
-  <div class="container bg-red-900/20 m-auto space-y-6">
+  <div class="space-y-6">
     <TweetCreate />
 
     <Timeline />

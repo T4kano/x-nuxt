@@ -16,7 +16,7 @@ async function handleTweet() {
 
 <template>
   <form
-    class="m-auto w-2/4 bg-gray-800 rounded-xl p-6 ring-2 shadow-lg' ring-gray-700 shadow-gray-700/20"
+    class="glassy"
     @submit.prevent="handleTweet"
   >
     <div

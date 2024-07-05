@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
 
   ui: {
-    icons: ['solar'],
+    icons: ['solar']
   },
 
   app: {
@@ -18,5 +18,7 @@ export default defineNuxtConfig({
         class: 'bg-gray-900 text-white antialiased'
       }
     }
-  }
+  },
+
+  compatibilityDate: '2024-07-05'
 })

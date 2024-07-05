@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { LoginForm } from '~/actions/auth/login';
-import actions from '~/actions';
+import type { LoginForm } from '~/actions/auth/login'
+import actions from '~/actions'
 // import { useAuthStore } from '~/stores/useAuthStore'
 definePageMeta({ layout: 'guest', middleware: ['guest'] })
 

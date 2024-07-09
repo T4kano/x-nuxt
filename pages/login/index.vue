@@ -18,7 +18,7 @@ const form = reactive<LoginForm>({
 </script>
 
 <template>
-  <div class="container bg-red-900/20 m-auto">
+  <div class="container m-auto">
     <form
       :class="[
         'space-y-4 m-auto w-1/3 bg-gray-800 rounded-xl p-6 ring-2 shadow-lg',

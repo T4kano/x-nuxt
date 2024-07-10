@@ -1,8 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    <h1>Guest</h1>
+  <div class="flex items-center justify-center h-screen">
     <slot />
   </div>
 </template>

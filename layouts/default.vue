@@ -3,11 +3,11 @@
 <template>
   <div id="main">
     <div class="flex gap-6 container m-auto p-8">
-      <div class="glassy w-2/5 h-fit">
+      <div class="glassy w-2/5 h-fit sticky top-8">
         <Sidenav />
       </div>
       <slot />
-      <div class="glassy w-2/5 h-fit" />
+      <div class="glassy w-2/5 h-fit sticky top-8" />
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 import actions from '~/actions'
 
-export default defineNuxtPlugin(async (nuxtApp) => {
+export default defineNuxtPlugin(async () => {
   try {
     await actions.auth.fetchUser()
     navigateTo('/')

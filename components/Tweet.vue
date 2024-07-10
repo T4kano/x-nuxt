@@ -22,19 +22,19 @@ defineProps({
         </span>
         <p class="mb-4">{{ tweet.content }}</p>
         <div class="flex justify-between text-gray-500">
-          <div>
+          <div class="flex transition">
             <UIcon name="i-solar-chat-square-outline" />
             <span class="text-xs ms-2">76</span>
           </div>
-          <div>
+          <div class="flex transition">
             <UIcon name="i-solar-share-outline" />
             <span class="text-xs ms-2">4.1K</span>
           </div>
-          <div>
+          <div class="flex transition">
             <UIcon name="i-solar-heart-outline" />
             <span class="text-xs ms-2">30K</span>
           </div>
-          <div>
+          <div class="flex transition">
             <UIcon name="i-solar-chart-bold" />
             <span class="text-xs ms-2">3.8M</span>
           </div>
